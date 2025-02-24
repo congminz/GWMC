@@ -6,9 +6,7 @@ library(ropls)
 library(tidyverse)
 library("ieggr")
 
-setwd("/data")
-
-xms=read.table("PLS inputdata final.txt", sep="\t", header= T, row.names = 1)
+xms=read.table("PLS inputdata.txt", sep="\t", header= T, row.names = 1)
 head(xms)
 xms1<-drop_na(xms)
 head(xms1)
